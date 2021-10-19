@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+/*Header*/
+header {
+  background-color: #eac926;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+header .header-content{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+}
+
+header .header-content-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 20px
+}
+
+header .header-content-top img{
+  width: 50%
+}
+
+header .header-content-top input {
+  width: 50%;
+  padding-right: 10px;
+}
+
+.header-content-top .fa-search{
+  left: -40px;
+  position: relative;
+  color: gray;
+}
+
+header .header-ad{
+  border: 1px solid red;
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+
+header .burger-menu {
+  display: flex;
+  justify-content: center;
+}
+
+header .burger-menu i {
+  color: white;
+  background-color: #1259c3;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
+
+header .header-search {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+header .header-search input {
+  display: flex;
+  flex-grow: 1;
+  height: 50px;
+}
+
+header .header-search-icon {
+  position: absolute; 
+  margin-left: 150px;
+  margin-top: 0px;
+}
+
+header .header-ad {
+  display: flex;
+  justify-content: center;
+}
+
+header .header-offers,
+header .header-session {
+  display: none;
+}
+
+header .header-session-account,
+header .header-session-login,
+header .header-session-cart {
+  display: flex;
+}
+
+/*Main*/
+main {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.main-banner {
+  width: 100vw;
+}
+
+.main-banner img{
+  width: 100%
+}
+
+main section {
+  margin: 10px;
+}
+
+main .main-section-one, main .main-section-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section article {
+  margin: 15px 0px;
+  background-color: white;
+  padding: 15px;
+  max-width: 400px;
+}
+
+main section article img {
+  width: 90%;
+}
+
+main .main-product {
+  border-top: 1px solid #ebebeb;
+  padding: 20px;
+}
+
+main .main-product-off {
+  color: rgb(5, 173, 5);
+}
+
+main .main-product-title {
+  font-size: 16px;
+  font-weight: 200;
+  color: #666;
+  padding-top: 25px;
+}
+
+.main-product-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main section article i {
+  font-size: 16px;
+  color: rgb(5, 173, 5);
+  display: block;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -35px;
+  box-sizing: border-box;
+}
+
+/*Footer*/
+
+footer {
+  background-color: white;
+  padding: 50px 0px 50px 0px
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer .fas {
+  font-size: 2em;
+  margin: 10px;
+  color: #1259c3;
+}
+
+footer h1 {
+  font-size: 24px;
+  color: #666;
+}
+
+footer p {
+  font-size: 12px;
+  color: #666;
+}
+
+/*Responsive*/
+@media screen and (min-width: 661px) {
+  /*Header*/
+  header .header-offers,
+  header .header-session {
+    display: block;
+  }
+
+  header .burger-menu {
+    display: none;
+  }
+
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  
+}
+
+/*Tablet*/
+@media screen and (max-width: 481px){
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  
+
+}
+
+@media screen and (min-width: 481px){
+  main .main-section-one, main .main-section-two{
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px
+  }
+}
+
+@media screen and (min-width: 661px){
+
+  .header-middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .header-offers ul{
+    display: flex;
+    list-style: none;
+    gap: 10px
+  }
+
+  .header-session ul {
+    display: flex;
+    list-style: none;
+    gap: 10px
+  }
+
+  .header-session ul div {
+    display: flex;
+    align-items: center;
+    gap: 5px
+  }
+}
+
+
+
+/*Desktop*/
+@media screen and (min-width: 1024px){
+  .main-section-one-one, .main-section-two-two {
+    display: flex;
+  }
+}
+
+
+/*Register Styles*/
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  align-items: center;
+}
+
+.register-form input {
+  width: 100%;
+  max-width: 250px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.register-form input[type='checkbox'], input[type='radio'] {
+  height: 15px
+} 
+
+.register-form div section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form button {
+  width: 200px;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.user-profile{
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.profile-options {
+  display: flex;
+  gap: 20px;
+}
+
+.interests {
+  display: flex;
+  gap: 15px;
+}
+
+.interests section {
+  display: flex;
+  gap: 10px;
+}
+
+
+.register-form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  gap: 20px;
+}
+
+.register-form-login input {
+  width: 80%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.register-form-login button {
+  width: 80%;
+  padding: 15px;
+  background-color: rgb(4, 4, 153);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}

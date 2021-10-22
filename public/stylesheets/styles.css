@@ -110,12 +110,8 @@ main {
   margin-top: 30px;
 }
 
-.main-banner {
-  width: 100vw;
-}
-
 .main-banner img{
-  width: 100%
+  width: 100%;
 }
 
 main section {
@@ -148,11 +144,17 @@ main .main-product-off {
   color: rgb(5, 173, 5);
 }
 
+main .main-product:hover .main-product-title{
+  opacity: 1;
+  transition: opacity 1.3s ease
+}
+
 main .main-product-title {
   font-size: 16px;
   font-weight: 200;
   color: #666;
   padding-top: 25px;
+  opacity: 0;
 }
 
 .main-product-icon {
@@ -160,7 +162,7 @@ main .main-product-title {
   justify-content: flex-end;
 }
 
-main section article i {
+main .fa-truck{
   font-size: 16px;
   color: rgb(5, 173, 5);
   display: block;
@@ -173,6 +175,11 @@ main section article i {
   position: absolute;
   margin-top: -35px;
   box-sizing: border-box;
+  transition: all 2s ease;
+}
+
+main .fa-truck:hover {
+  transform: rotate(-95deg);
 }
 
 /*Footer*/
@@ -195,6 +202,11 @@ footer .fas {
   color: #1259c3;
 }
 
+footer .fas:hover {
+  color: gray;
+  transition: color 1.4s ease;
+}
+
 footer h1 {
   font-size: 24px;
   color: #666;
@@ -204,6 +216,11 @@ footer p {
   font-size: 12px;
   color: #666;
 }
+
+.footer-terms {
+  margin-top: 50px
+}
+
 
 /*Responsive*/
 @media screen and (min-width: 661px) {
@@ -217,8 +234,9 @@ footer p {
     display: none;
   }
 
-  main section article {
+  main section article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: box-shadow 1.2s ease-in-out;
   }
 
   
@@ -279,6 +297,12 @@ footer p {
   .main-section-one-one, .main-section-two-two {
     display: flex;
   }
+
+  footer .footer-cards {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+  }
 }
 
 
@@ -287,9 +311,10 @@ footer p {
 .register-form {
   display: flex;
   flex-direction: column;
-  padding: 50px;
-  gap: 20px;
+  padding: 30px;
+  gap: 30px;
   align-items: center;
+  flex-direction: column;
 }
 
 .register-form input {
@@ -306,11 +331,16 @@ footer p {
   height: 15px
 } 
 
+.register-form .single-inputs{
+  display: flex;
+  gap: 10px;
+}
+
 .register-form div section{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap: 10px;
   align-items: center;
+  margin-top: 10px;
 }
 
 .register-form div {
@@ -374,4 +404,8 @@ footer p {
   border: none;
   font-weight: bold;
   cursor: pointer;
+}
+
+.register-form-login button:hover{
+  background-color: #0022AA;
 }

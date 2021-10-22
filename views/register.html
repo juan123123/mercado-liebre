@@ -54,58 +54,63 @@
       </header>
 
       <form class="register-form" action='login' method="get">
-        <input type="text" placeholder="Full Name" required>
+        <section class="single-inputs">
+          <input type="text" placeholder="Full Name" required>
         
-        <input type="text" placeholder="Username" required>
+          <input type="text" placeholder="Username" required>
         
+          <input type="text" placeholder="Address" required>
+        </section>
+
         <label for="date">Birth Date</label>
         <input type="date" id="date" required>
         
-        <input type="text" placeholder="Address" required>
-        
-        <div class="user-profile">
-          <section>
-            <h1>User profile</h1>
-          </section>
-          <section class="profile-options">
-            <article class="option-1">
-                <label for="comprar">comprador</label>
-                <input type="radio" id='comprar' value='comprar'>
-            </article>
-            
-       
-            <article class="option-2">
-                <label for="vender">vendedor</label>
-                <input type="radio" id='vender' value='vender'>
-            </article>
-            
-          </section>
-        </div>
-        
-        <div class="interests">
-          <section>
-            <h1>Interests</h1>
-          </section>
-          <section>
-            <input type="checkbox" id='category1'>
-            <label for="category1">Electro</label>
-            
-            <input type="checkbox" id='category2'>
-            <label for="category2">Moda</label>
-            <input type="checkbox" id='category3'>
-            
-            <label for="category3">Hogar</label>
-            <input type="checkbox" id='category4'>
-            
-            <label for="category4">Jugueteria</label>
-            <input type="checkbox" id='category5'>
-            
-            <label for="category5">Vida Sana</label>
-            <input type="file" id='photo' required>
-          </section>
-        </div>
+        <section>
+          <div class="user-profile">
+            <section>
+              <h1>User profile</h1>
+            </section>
+            <section class="profile-options">
+              <article class="option-1">
+                  <label for="comprar">comprador</label>
+                  <input type="radio" id='comprar' value='comprar'>
+              </article>
+              
+         
+              <article class="option-2">
+                  <label for="vender">vendedor</label>
+                  <input type="radio" id='vender' value='vender'>
+              </article>
+              
+            </section>
+          </div>
+          
+          <div class="interests">
+            <section>
+              <h1>Interests</h1>
+            </section>
+            <section>
+              <input type="checkbox" id='category1'>
+              <label for="category1">Electro</label>
+              
+              <input type="checkbox" id='category2'>
+              <label for="category2">Moda</label>
+              <input type="checkbox" id='category3'>
+              
+              <label for="category3">Hogar</label>
+              <input type="checkbox" id='category4'>
+              
+              <label for="category4">Jugueteria</label>
+              <input type="checkbox" id='category5'>
+              
+              <label for="category5">Vida Sana</label>
+              
+            </section>
+          </div>
+        </section>
         
         <label for="photo">User photo</label>
+        <input type="file" id='photo' required>
        
         <input type="password" placeholder="password" required>
         <input type="password" placeholder="Confirm Password" required>
@@ -115,28 +120,30 @@
       </form>
 
       <footer>
-        <section class="footer-card">
-          <i class="fas fa-credit-card"></i>
-          <h1>Paga con tarjeta o en efectivo</h1>
-          <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-            puntos de pago. ¡Y siempre es seguro!</p>
-        </section>
+        <div class="footer-cards">
+          <section class="footer-card">
+            <i class="fas fa-credit-card"></i>
+            <h1>Paga con tarjeta o en efectivo</h1>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+              puntos de pago. ¡Y siempre es seguro!</p>
+          </section>
+          
+          <section class="footer-shipping">
+            <i class="fas fa-gift"></i>
+            <h1>Envío gratis desde $ 2.500</h1>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+              productos. Es un beneficio de Mercado Puntos.</p>
+          </section>
+      
+          <section class="footer-security">
+            <i class="fas fa-user-shield"></i>
+            <h1>Seguridad, de principio a fin</h1>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+              porque estás siempre protegid@.</p>
+          </section>
+        </div>
         
-        <section class="footer-shipping">
-          <i class="fas fa-gift"></i>
-          <h1>Envío gratis desde $ 2.500</h1>
-          <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-            productos. Es un beneficio de Mercado Puntos.</p>
-        </section>
-    
-        <section class="footer-security">
-          <i class="fas fa-user-shield"></i>
-          <h1>Seguridad, de principio a fin</h1>
-          <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-            porque estás siempre protegid@.</p>
-        </section>
-        
-        <section>
+        <section class="footer-terms">
           <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
     
